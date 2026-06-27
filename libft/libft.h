@@ -24,6 +24,7 @@
 
 size_t	ft_strlen(const char *str);
 int		ft_isalnum(int c);
+int		ft_strcmp(char *s1, char *s2);
 void	ft_bzero(void *s, size_t n);
 size_t	ft_strlcat(char *dest, char *src, size_t size);
 size_t	ft_strlen(const char *str);
@@ -64,6 +65,7 @@ char	*ft_strjoin_gnl(char *stash, char *s2);
 void	str_fill(char **result, char **str1, char **str2);
 int		ft_strchr_gnl(char *str, char c);
 char	*ft_strdup_gnl(char *src);
+char	*ft_get_env(char *name, char **envp);
 char	*get_next_line(int fd);
 char	*clear_all(char **buffer, char **stash);
 char	*extract_remain(char *stash);
